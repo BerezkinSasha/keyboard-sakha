@@ -2,5 +2,5 @@
     <string name="app_name">keyboard</string>
     <string name="simple_ime">Simple IME</string>
     <string name="subtype_skh_NOV">Sakha</string>
-    <string name="ꭠ">&#43872;</string>
+    <string name="uokoroche">\uAB63</string>
 </resources>
