@@ -22,7 +22,7 @@ public class SimpleIME extends InputMethodService
     private Keyboard mKeyboard;
     private Constants.KEYS_TYPE mCurrentLocale;
     private Constants.KEYS_TYPE mPreviousLocale;
-    private boolean isCapsOn = true;
+    private boolean isCapsOn = false;
 
     @SuppressLint("InflateParams")
     @Override
@@ -113,7 +113,7 @@ public class SimpleIME extends InputMethodService
             default:
                 char code = (char) primaryCode;
                 if (Character.isLetter(code) && isCapsOn) {
-                    code = Character.toUpperCase(code);
+                    code = Character.toLowerCase(code);
                 }
 
                 ic.commitText(String.valueOf(code), 1);

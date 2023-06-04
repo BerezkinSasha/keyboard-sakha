@@ -8,10 +8,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#A9A9A9</color>
+    <color name="colorAccent">#2F4F4F</color>
 
     <color name="key_preview_background">@android:color/darker_gray</color>
-    <color name="key_preview_text_color">@android:color/black</color>
+    <color name="key_preview_text_color">#808080</color>
 </resources>
