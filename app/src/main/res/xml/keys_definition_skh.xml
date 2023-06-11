@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
-    android:keyWidth="10%p"
     android:horizontalGap="5px"
     android:verticalGap="0px"
-    android:keyHeight="45dp">
+    android:keyHeight="50dp">
 
-    <Row>
+    <Row android:keyWidth="32dp">
         <Key android:codes="113" android:keyLabel="q" android:horizontalGap="1%" android:keyEdgeFlags="left"/>
         <Key android:codes="119" android:keyLabel="w" />
         <Key android:codes="101" android:keyLabel="e" />
@@ -19,7 +18,7 @@
         <Key android:codes="654" android:keyLabel="ʎ" />
         <Key android:codes="1079" android:keyLabel="з" android:keyEdgeFlags="right" />
     </Row>
-    <Row>
+    <Row android:keyWidth="35dp">
         <Key android:codes="97" android:keyLabel="a" android:horizontalGap="1%" android:keyEdgeFlags="left" />
         <Key android:codes="115" android:keyLabel="s" />
         <Key android:codes="100" android:keyLabel="d" />
@@ -32,7 +31,7 @@
         <Key android:codes="623" android:keyLabel="ɯ" />
         <Key android:codes="1125" android:keyLabel="ѥ" android:keyEdgeFlags="right" />
     </Row>
-    <Row>
+    <Row android:keyWidth="35dp">
         <Key android:codes="339" android:keyLabel="œ" android:horizontalGap="1%" android:keyEdgeFlags="left" />
         <Key android:codes="650" android:keyLabel="ʋ" />
         <Key android:codes="99" android:keyLabel="c" />
@@ -44,12 +43,13 @@
         <Key android:codes="1113" android:keyLabel="љ" />
         <Key android:codes="643" android:keyLabel="ʃ" />
         <Key android:codes="-5" android:keyIcon="@drawable/ic_backspace_white_24dp"
-            android:isRepeatable="true" android:keyEdgeFlags="right" android:keyWidth="10%p" />
+            android:isRepeatable="true" android:keyEdgeFlags="right" android:keyWidth="40dp" />
     </Row>
     <Row android:rowEdgeFlags="bottom">
         <Key android:codes="-6" android:keyLabel="\?123" android:keyWidth="16%p" android:keyEdgeFlags="left" />
+        <Key android:codes="-2" android:keyIcon="@drawable/ic_language_white_24dp" />
         <Key android:codes="44" android:keyLabel="," />
-        <Key android:codes="32" android:keyLabel=" " android:keyWidth="45%p" android:isRepeatable="true" />
+        <Key android:codes="32" android:keyLabel=" " android:keyWidth="35%p" android:isRepeatable="true" />
         <Key android:codes="46" android:keyLabel="." />
         <Key android:codes="-4" android:keyIcon="@drawable/ic_keyboard_return_white_24dp"
             android:keyWidth="19%p" android:keyEdgeFlags="right" />

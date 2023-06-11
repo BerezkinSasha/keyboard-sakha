@@ -4,4 +4,8 @@
         android:label="@string/subtype_skh_NOV"
         android:imeSubtypeLocale="skh_NOV"
         android:imeSubtypeMode="keyboard" />
+    <subtype
+        android:label="@string/subtype_skh"
+        android:imeSubtypeLocale="skh"
+        android:imeSubtypeMode="keyboard" />
 </input-method>

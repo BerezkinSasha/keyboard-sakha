@@ -43,8 +43,10 @@ public class SimpleIME extends InputMethodService
      */
     private Keyboard getKeyboard(Constants.KEYS_TYPE locale) {
         switch (locale) {
-            case SAKHA:
+            case SAKHANOV:
                 return new Keyboard(this, R.xml.keys_definition_skh);
+            case SAKHA:
+                return new Keyboard(this, R.xml.keys_definition_sakha);
             case SYMBOLS:
                 return new Keyboard(this, R.xml.keys_definition_symbols);
             default:
@@ -108,7 +110,7 @@ public class SimpleIME extends InputMethodService
                 handleSymbolsSwitch();
                 break;
             case Keyboard.KEYCODE_MODE_CHANGE:
-                /*handleLanguageSwitch();*/
+                handleLanguageSwitch();
                 break;
             default:
                 char code = (char) primaryCode;
@@ -166,17 +168,17 @@ public class SimpleIME extends InputMethodService
         mKeyboardView.invalidateAllKeys();
     }
 
-    /*private void handleLanguageSwitch() {
-        if (mCurrentLocale == Constants.KEYS_TYPE.RUSSIAN) {
-            mCurrentLocale = Constants.KEYS_TYPE.ENGLISH;
-            mKeyboard = getKeyboard(Constants.KEYS_TYPE.ENGLISH);
+    private void handleLanguageSwitch() {
+        if (mCurrentLocale == Constants.KEYS_TYPE.SAKHA) {
+            mCurrentLocale = Constants.KEYS_TYPE.SAKHANOV;
+            mKeyboard = getKeyboard(Constants.KEYS_TYPE.SAKHANOV);
         } else {
-            mCurrentLocale = Constants.KEYS_TYPE.RUSSIAN;
-            mKeyboard = getKeyboard(Constants.KEYS_TYPE.RUSSIAN);
+            mCurrentLocale = Constants.KEYS_TYPE.SAKHA;
+            mKeyboard = getKeyboard(Constants.KEYS_TYPE.SAKHA);
         }
 
         mKeyboardView.setKeyboard(mKeyboard);
         mKeyboard.setShifted(isCapsOn);
         mKeyboardView.invalidateAllKeys();
-    }*/
+    }
 }
