@@ -1,8 +1,5 @@
 package com.example.keyboard;
 
-import static android.content.Context.AUDIO_SERVICE;
-import static androidx.core.content.ContextCompat.getSystemService;
-
 import android.annotation.SuppressLint;
 import android.inputmethodservice.InputMethodService;
 import android.inputmethodservice.Keyboard;
@@ -37,10 +34,6 @@ public class SimpleIME extends InputMethodService
         return mKeyboardView;
     }
 
-    /**
-     * @param locale - keys of keyboard
-     * @return localized keyboard
-     */
     private Keyboard getKeyboard(Constants.KEYS_TYPE locale) {
         switch (locale) {
             case SAKHANOV:
@@ -54,11 +47,6 @@ public class SimpleIME extends InputMethodService
         }
     }
 
-    /**
-     * Play sound on key press
-     *
-     * @param keyCode of pressed key
-     */
     private void playClick(int keyCode) {
         AudioManager am = (AudioManager) getSystemService(AUDIO_SERVICE);
         switch (keyCode) {
