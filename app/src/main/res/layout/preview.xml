@@ -6,4 +6,4 @@
     android:background="@color/key_preview_background"
     android:textColor="@color/colorPrimary"
     android:textStyle="bold"
-    android:textSize="30sp" />
+    android:textSize="25sp" />

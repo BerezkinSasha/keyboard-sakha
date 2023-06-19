@@ -11,7 +11,7 @@ public class Constants {
     }
 
     public enum KEYS_TYPE {
-        SYMBOLS, SAKHANOV, SAKHA
+        SYMBOLS, SAKHA, SAKHANOV
     }
 
 }

@@ -25,7 +25,7 @@ public class SimpleIME extends InputMethodService
     @Override
     public View onCreateInputView() {
         mKeyboardView = (KeyboardView) getLayoutInflater().inflate(R.layout.keyboard, null);
-        mCurrentLocale = Constants.KEYS_TYPE.SAKHA;
+        mCurrentLocale = Constants.KEYS_TYPE.SAKHANOV;
         mKeyboard = getKeyboard(mCurrentLocale);
         mKeyboard.setShifted(isCapsOn);
         mKeyboardView.setKeyboard(mKeyboard);
@@ -157,12 +157,12 @@ public class SimpleIME extends InputMethodService
     }
 
     private void handleLanguageSwitch() {
-        if (mCurrentLocale == Constants.KEYS_TYPE.SAKHA) {
-            mCurrentLocale = Constants.KEYS_TYPE.SAKHANOV;
-            mKeyboard = getKeyboard(Constants.KEYS_TYPE.SAKHANOV);
-        } else {
+        if (mCurrentLocale == Constants.KEYS_TYPE.SAKHANOV) {
             mCurrentLocale = Constants.KEYS_TYPE.SAKHA;
             mKeyboard = getKeyboard(Constants.KEYS_TYPE.SAKHA);
+        } else {
+            mCurrentLocale = Constants.KEYS_TYPE.SAKHANOV;
+            mKeyboard = getKeyboard(Constants.KEYS_TYPE.SAKHANOV);
         }
 
         mKeyboardView.setKeyboard(mKeyboard);
